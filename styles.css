@@ -7,18 +7,23 @@
 }
 
 :root {
-    --color-bg: #0a0a0f;
+    --color-bg-main: #0a0a0f;
     --color-bg-secondary: #1a1a2e;
     --color-text: #f5f0e8;
     --color-accent: #ff3c5f;
     --color-hover: #e0002e;
-    --color-highlight:#ff9f1c;
-    --color-border: var(--color-border);
+    --color-highlight: #ff9f1c;
+    --color-white: #fff;
+    --color-border: rgba(255, 255, 255, 0.08);
     --color-bg-nav: rgba(255, 255, 255, 0.06);
+
+    --font-main: 'Unbounded', sans-serif;
+    --font-bold: 700;
+    --font-black: 900; 
 }
 
 body {
-    background: var(--color-bg);
+    background: var(--color-bg-main);
     color: var(--color-text);
     font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
@@ -41,9 +46,9 @@ body {
 }
 
 .nav__logo {
-    font-family:'Unbounded', sans-serif;
+    font-family:var(--font-main);
     font-size: 22px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     color: var(--color-accent);
     letter-spacing: -0.5px;
 }
@@ -76,12 +81,12 @@ body {
 
 .nav__button {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-white);
     border: none;
     padding: 12px 28px;
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
@@ -135,7 +140,7 @@ body {
     border: 1px solid var(--color-accent);
     color: var(--color-accent);
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 2.5px;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -143,9 +148,9 @@ body {
 }
 
 .hero__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(48px, 6vw, 88px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     line-height: 1.0;
     letter-spacing: -2px;
     margin-bottom: 28px;
@@ -172,12 +177,12 @@ body {
 
 .button--primary {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-white);
     border: none;
     padding: 18px 42px;
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -194,9 +199,9 @@ body {
     color: var(--color-text);
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 18px 42px;
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -212,9 +217,9 @@ body {
     right: 60px;
     top: 50%;
     transform: translateY(-50%);
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(180px, 22vw, 320px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     color: rgba(255, 255, 255, 0.03);
     line-height: 1;
     user-select: none;
@@ -240,9 +245,9 @@ body {
 }
 
 .stats__value {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 52px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     color: var(--color-accent);
     display: block;
     line-height: 1;
@@ -269,9 +274,9 @@ body {
 }
 
 .courses__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(32px, 4vw, 52px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: -1.5px;
     line-height: 1.1;
 }
@@ -283,7 +288,7 @@ body {
 .courses__link {
     color: var(--color-accent);
     font-size: 13px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -337,9 +342,9 @@ body {
 }
 
 .card__label {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     margin-bottom: 12px;
     letter-spacing: -0.5px;
 }
@@ -367,9 +372,9 @@ body {
 }
 
 .card__price {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 18px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     color: ;
 }
 
@@ -390,12 +395,12 @@ body {
 }
 
 .featured__quote {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(28px, 3vw, 48px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     line-height: 1.15;
     letter-spacing: -1px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .featured__author {
@@ -416,10 +421,10 @@ body {
 }
 
 .featured__name {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 14px;
-    font-weight: 700;
-    color: #fff;
+    font-weight: var(--font-bold);
+    color: var(--color-white);
 }
 
 .featured__role {
@@ -441,14 +446,14 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-highlight);
-    font-weight: 700;
+    font-weight: var(--font-bold);
     margin-bottom: 24px;
 }
 
 .featured__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 36px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: -1px;
     margin-bottom: 20px;
 }
@@ -493,9 +498,9 @@ body {
 }
 
 .teachers__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(32px, 4vw, 52px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: -1.5px;
     margin-bottom: 16px;
 }
@@ -519,7 +524,7 @@ body {
 }
 
 .teachers-card {
-    background: var(--color-bg);
+    background: var(--color-bg-main);
     padding: 32px 24px;
     text-align: center;
     transition: transform 0.3s;
@@ -543,9 +548,9 @@ body {
 }
 
 .teachers-card__name {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     margin-bottom: 6px;
 }
 
@@ -575,9 +580,9 @@ body {
 }
 
 .review__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(32px, 4vw, 52px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: -1.5px;
     margin-bottom: 12px;
 }
@@ -604,7 +609,7 @@ body {
 }
 
 .review__mark {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 80px;
     color: var(--color-accent);
     opacity: 0.2;
@@ -638,9 +643,9 @@ body {
 }
 
 .review__name {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 13px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .review__course {
@@ -675,7 +680,7 @@ body {
     left: -60px;
     top: -80px;
     line-height: 1;
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
 }
 
 .cta::after {
@@ -694,11 +699,11 @@ body {
 }
 
 .cta__title {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: clamp(36px, 5vw, 72px);
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: -2px;
-    color: #fff;
+    color: var(--color-white);
     line-height: 1.0;
     margin-bottom: 20px;
 }
@@ -712,13 +717,13 @@ body {
 }
 
 .cta__button {
-    background: #fff;
+    background: var(--color-white);
     color: var(--color-accent);
     border: none;
     padding: 20px 52px;
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 13px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -739,9 +744,9 @@ body {
 }
 
 .footer__logo {
-    font-family: 'Unbounded', sans-serif;
+    font-family: var(--font-main);
     font-size: 20px;
-    font-weight: 900;
+    font-weight: var(--font-black);
     color: var(--color-accent);
 }
 
@@ -782,7 +787,7 @@ body {
     height: 40px;
     padding: 0 60px 0;
     border-bottom: 1px solid var(--color-bg-nav);
-    background: var(--color-bg);
+    background: var(--color-bg-main);
 }
 
 .wave__bar {
